@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+             x:Class="TizenWearableXamlApp1.MainPage">
+  <c:CirclePage.Content>
+        <AbsoluteLayout x:Name="MainView" BackgroundColor="Black">
+            <Label x:Name="label" Text="Before click imagebutton."
+                    AbsoluteLayout.LayoutBounds=".5, .2, 360, 40"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+            <ImageButton AbsoluteLayout.LayoutBounds=".5, .5, 72, 72"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Source="images/icon.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnImageButtonClicked" />
+        </AbsoluteLayout>
+  </c:CirclePage.Content>
+</c:CirclePage>
